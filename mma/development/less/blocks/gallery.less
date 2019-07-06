@@ -1,0 +1,71 @@
+.gallery {
+  .container {
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    font-size: 64px;
+    font-family: "Futura PT Bold", sans-serif;
+    line-height: 46px;
+    text-transform: uppercase;
+  }
+
+  &__more {
+    margin-top: 6px;
+    font-size: 20px;
+    font-family: "Futura PT Demi", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+    height: 57px;
+    width: 100%;
+    color: #ffffff !important;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+    &:hover {
+      color: #000 !important;
+      background-color: #fff;
+    }
+  }
+}
+.gallery-bg {
+  display: flex;
+
+  &__left {
+    background-image: url("./../img/sections/gallery1.jpg");
+  }
+
+  &__right {
+    background-image: url("./../img/sections/gallery2.jpg");
+  }
+
+  &__left,
+  &__right {
+    width: 50%;
+    height: 0;
+    padding-top: 50%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #000000;
+      opacity: 0.5;
+    }
+  }
+}

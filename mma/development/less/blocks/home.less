@@ -1,0 +1,132 @@
+.home {
+  height: 100vh;
+  max-height: 881px;
+  position: relative;
+  z-index: 0;
+
+  .container {
+    background: url("./../img/sections/section-1_1.jpg") no-repeat center;
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background-color: #000000;
+      opacity: 0.3;
+    }
+  }
+
+  &__go-down {
+    position: absolute;
+    bottom: 62px;
+    right: 50%;
+    transform: translate(50%,0);
+  }
+}
+
+.home-content {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  right:-50px;
+
+  &__title {
+    flex: 1;
+    padding-left: 100px;
+
+    &--buy {
+      font-size: 40px;
+      color: #fff;
+      font-family: "Futura PT Demi", sans-serif;
+      border: 4px solid #fff;
+      display: flex;
+      width: 282px;
+      height: 95px;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 2px;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #fff;
+        color: #000000;
+      }
+    }
+
+    h1 {
+      font-size: 52px;
+      font-family: "Futura PT Bold", sans-serif;
+      color: #fff;
+      margin-bottom: 25px;
+      max-width: 483px;
+    }
+  }
+
+  &__videos {
+    display: flex;
+
+    &--video {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+      width: 26vw;
+      max-width: 380px;
+      height: 0;
+      padding-top: 32.5%;
+      position: relative;
+      cursor: pointer;
+
+      &:first-child {
+        margin-right: 35px;
+      }
+    }
+  }
+}
+
+.video-play {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+
+  &__circle {
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-25%, -50%);
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-left: 16px solid #fff;
+    }
+  }
+
+  &__text {
+    font-size: 52px;
+    color: #fff;
+    font-family: "Futura PT Bold", sans-serif;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,69 @@
+.info {
+  padding-top: 154px;
+  padding-bottom: 152px;
+  background-color: #fff;
+
+  &__title {
+    text-transform: uppercase;
+    font-family: "Futura PT Bold", sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    line-height: 51px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -37px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 1px;
+      background: #b4b4b4;
+    }
+  }
+}
+
+.info-slider {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 10px;
+
+  &__wrap {
+    padding: 40px;
+  }
+
+  &__item {
+    p {
+      font-size: 20px;
+      text-align: center;
+      max-width: 879px;
+      margin: 0 auto;
+      line-height: 26px;
+    }
+  }
+}
+
+.infoSlider-controls {
+  position: relative;
+}
+
+.infoSlider-left {
+    padding: 8px;
+    position: absolute;
+    left: 50px;
+    bottom: 170px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.infoSlider-right {
+    padding: 8px;
+    position: absolute;
+    right: 50px;
+    bottom: 170px;
+    z-index: 9;
+    cursor: pointer;
+}

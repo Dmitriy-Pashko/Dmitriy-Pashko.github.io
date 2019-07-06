@@ -1,0 +1,35 @@
+<section class="home">
+  <div class="container">
+      @@include('header.html')
+    <div class="home-content">
+      <div class="home-content__title">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <button class="home-content__title--buy">Купить</button>
+      </div>
+      <div class="home-content__videos">
+        <div
+          class="home-content__videos--video"
+          style="background-image: url(img/sections/home1.jpg)"
+        >
+          <div class="video-play">
+            <span class="video-play__text">Play</span>
+            <span class="video-play__circle"></span>
+          </div>
+        </div>
+        <div
+          class="home-content__videos--video"
+          style="background-image: url(img/sections/home2.jpg)"
+        >
+          <div class="video-play">
+            <span class="video-play__text">Play</span>
+            <span class="video-play__circle"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href=".about" class="home__go-down" id="header-down">
+      <img src="./img/logo/go_down.png" alt="" />
+    </a>
+    @@include('slide-menu.html')
+  </div>
+</section>
